@@ -29,5 +29,5 @@ app.get('/posts', (req, res) =>{
 })
 
 app.listen( process.env.PORT, err  => {
-                console.log(err || `Server listening on ${PORT}`)
+                console.log(err || `Server listening on ${process.env.PORT}`)
             })
