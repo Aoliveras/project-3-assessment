@@ -1,0 +1,40 @@
+<style>
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+    
+    td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+    
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+    </style>
+
+<a href="/">HOME</a> | <a href="/posts">ALL POSTS</a>
+
+<h1>ALL POSTS</h1>
+
+<tbody>
+    
+</tbody>
+
+<table>
+    <tr>
+      <th>Title</th>
+      <th>Body</th>
+    </tr>
+    <% for(var i=0; i < payload.length; i++) {%>
+        <tr>
+          <td><%= payload[i].title %></td>
+          <td><%= payload[i].body %></td>
+        </tr>
+        <% } %>
+    <tr>
+  </table>
+  
