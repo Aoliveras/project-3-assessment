@@ -2,8 +2,7 @@ const
     express = require('express'),
     app = express(),
     ejs = require('ejs'),
-    axios = require('axios'),
-    PORT = 3000
+    axios = require('axios')
 
 const apiClient = axios.create();
 
@@ -29,6 +28,6 @@ app.get('/posts', (req, res) =>{
     })
 })
 
-app.listen( PORT, err  => {
+app.listen( process.env.PORT, err  => {
                 console.log(err || `Server listening on ${PORT}`)
             })
